@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+
+<body>
+    <p class="tip">E-TABIB</p>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>BIENVENU</h2>
+            <br>
+            <label>
+                <span>Name</span>
+                <input type="text" />
+            </label>
+           
+            <label>
+                <span>Email</span>
+                <input type="email" />
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" />
+            </label>
+            
+            
+            <button type="button" class="submit">Connecter</button>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                    <h2>Bonjour! </h2>
+                    <p> Connecter vous ici et soignez vous bien !</p>
+                </div>
+                <div class="img__text m--in">
+                    <h2>Bonjour Doctor !</h2>
+                    <p>Vous pouvez connecter a votre platforme en ajoutant vos coordonnées</p>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Medecin</span>
+                    <span class="m--in">Patient </span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>BIENVENU DOCTOR</h2>
+                <br>
+                <label>
+                    <span>Name</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" />
+                </label>
+                <button type="button" class="submit">Connecter</button>
+            </div>
+        </div>
+    </div>
+
+    <center >
+        <h4 ><a href="paralax/index.html">aide</a></h4>
+    </center>
+
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+</body>
+
+</html>
